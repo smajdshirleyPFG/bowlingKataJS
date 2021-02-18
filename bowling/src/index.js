@@ -1,9 +1,10 @@
+let bucket = 0
 function roll(pins) {
-
+  bucket += pins;
 }
 
 function score() {
-  return 0;
+  return bucket;
 }
 
 export {roll, score}
